@@ -1,0 +1,7 @@
+HelloAlexaIntent say hello
+HelloAlexaIntent say hello world
+HelloAlexaIntent hello
+HelloAlexaIntent say hi
+HelloAlexaIntent say hi world
+HelloAlexaIntent hi
+HelloAlexaIntent how are you
