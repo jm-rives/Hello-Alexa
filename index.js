@@ -1,7 +1,10 @@
 'use strict';
+
 // invoke with hello e.g "Alexa, ask hello to say something"
+
+// should be a hash, will update at a later step
 var APP_ID = undefined;
-var SPEECH_OUTPUT = "Butz";
+var SPEECH_OUTPUT = "Butz!";
 var AlexaSkill = require('./AlexaSkill');
 var HelloAlexa = function() {
   AlexaSkill.call(this, APP_ID);
