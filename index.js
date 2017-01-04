@@ -2,9 +2,10 @@
 
 // invoke with hello e.g "Alexa, ask hello to say something"
 
-// should be a hash, will update at a later step
-var APP_ID = undefined;
-var SPEECH_OUTPUT = "Butz!";
+//  APP_ID came from https://developer.amazon.com/edw/home.html#/skill/amzn1.ask.skill.39466ef7-93a5-4b3e-9ab4-f9b55bbfb7bb/en_US/info
+var APP_ID = 'amzn1.ask.skill.39466ef7-93a5-4b3e-9ab4-f9b55bbfb7bb';
+
+var SPEECH_OUTPUT = "Butz!...Butz! Butz! Butz!";
 var AlexaSkill = require('./AlexaSkill');
 var HelloAlexa = function() {
   AlexaSkill.call(this, APP_ID);
@@ -19,7 +20,18 @@ var helloResponseFunction = function(intent, session, response) {
 HelloAlexa.prototype.eventHandlers.onLaunch = helloResponseFunction;
 
 HelloAlexa.prototype.intentHandlers = {
-  var HelloAlexa = new HelloAlexa();
-  HelloAlexa.execute(event, context);
+  'HelloAlexaIntent' : helloResponseFunction
 };
+
+exports.handler = function(event, context) {
+  var helloAlexa = new HelloAlexa();
+  helloAlexa.execute(event, context);
+};
+
+
+
+
+
+
+
 
