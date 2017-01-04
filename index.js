@@ -1,5 +1,5 @@
 'use strict';
-
+// invoke with hello e.g "Alexa, ask hello to say something"
 var APP_ID = undefined;
 var SPEECH_OUTPUT = "Butz";
 var AlexaSkill = require('./AlexaSkill');

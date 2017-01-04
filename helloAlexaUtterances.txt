@@ -5,3 +5,5 @@ HelloAlexaIntent say hi
 HelloAlexaIntent say hi world
 HelloAlexaIntent hi
 HelloAlexaIntent how are you
+HelloAlexaIntent speak
+HelloAlexaIntent say something
