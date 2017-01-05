@@ -14,6 +14,7 @@ function AlexaSkill(appId) {
   this._appId = appId;
 }
 
+// TODO jm-rives look up SSML
 AlexaSkill.speechOutputType = {
   PLAIN_TEXT: 'PlainText',
   SSML: 'SSML'
